@@ -2,7 +2,11 @@
 #include <string>
 #include "Partido.hpp"
 
-using namespace std; 
+using namespace std;
+
+Partido :: Partido(){
+	
+} 
 
 int Partido :: GETgoles1(){
 	return goles1; 
@@ -45,10 +49,3 @@ void Partido :: SETequipo1(Equipo x){
 void Partido :: SETequipo2(Equipo x){
 	equipo2 = x; 
 }
-
-
-
-
-
-
-

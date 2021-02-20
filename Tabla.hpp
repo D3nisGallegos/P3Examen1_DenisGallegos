@@ -1,29 +1,25 @@
+#ifndef TABLA.HPP
+#define TABLA.HPP
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Equipo.cpp"
 #include "Partido.cpp"
+#include "Puntos.cpp"
 
 using namespace std; 
 
-class Partido{
+class Tabla{
 	private : 
-	Equipo equipo1; 
-	Equipo equipo2; 
-	int goles1; 
-	int goles2; 
-	bool jugado; 
+	vector <Puntos*> puntos; 
 	
 	public: 
-	int GETgoles1();
-	int GETgoles2();
-	bool GETjugado();
-	Equipo GETequipo1();
-	Equipo GETequipo2();
-	void SETgoles1(int);
-	void SETgoles2(int);
-	void SETjugado(bool);
-	void SETequipo1(Equipo);
-	void SETequipo2(Equipo);
+	Tabla();
+	Tabla(vector <Puntos*> );
+	void SETpuntos(vector <Puntos*>);
+	vector <Puntos*> GETpuntos();
 		
 	
 };//Fin de la clase.
+
+#endif

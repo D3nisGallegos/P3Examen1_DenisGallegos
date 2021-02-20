@@ -1,15 +1,15 @@
-# Project: P3Examen1_DenisGallegos
+# Project: P3Examen1_DenisCalix
 # Makefile created by Embarcadero Dev-C++ 6.3
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o Equipo.o Partido.o
-LINKOBJ  = main.o Equipo.o Partido.o
+OBJ      = main.o Liga.o Equipo.o Partido.o Tabla.o Puntos.o
+LINKOBJ  = main.o Liga.o Equipo.o Partido.o Tabla.o Puntos.o
 LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
-BIN      = P3Examen1_DenisGallegos.exe
+BIN      = P3Examen1_DenisCalix.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
@@ -27,8 +27,17 @@ $(BIN): $(OBJ)
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
+Liga.o: Liga.cpp
+	$(CPP) -c Liga.cpp -o Liga.o $(CXXFLAGS)
+
 Equipo.o: Equipo.cpp
 	$(CPP) -c Equipo.cpp -o Equipo.o $(CXXFLAGS)
 
 Partido.o: Partido.cpp
 	$(CPP) -c Partido.cpp -o Partido.o $(CXXFLAGS)
+
+Tabla.o: Tabla.cpp
+	$(CPP) -c Tabla.cpp -o Tabla.o $(CXXFLAGS)
+
+Puntos.o: Puntos.cpp
+	$(CPP) -c Puntos.cpp -o Puntos.o $(CXXFLAGS)

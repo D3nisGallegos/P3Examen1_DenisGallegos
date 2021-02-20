@@ -1,6 +1,7 @@
+#ifndef EQUIPO.HPP
+#define EQUIPO.HPP
 #include <iostream>
 #include <string>
-#pragma once
 
 using namespace std; 
 	
@@ -18,3 +19,5 @@ class Equipo{
 	void SETnombre(string);
 	
 };//Fin de la clase.
+
+#endif

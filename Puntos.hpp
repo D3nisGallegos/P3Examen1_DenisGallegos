@@ -1,3 +1,5 @@
+#ifndef PUNTOS.HPP
+#define PUNTOS.HPP
 #include <iostream>
 #include <string>
 #include "Equipo.cpp"
@@ -6,23 +8,29 @@ using namespace std;
 
 class Puntos{
 	private : 
-	Equipo equipo1; 
-	Equipo equipo2; 
-	int goles1; 
-	int goles2; 
-	bool jugado; 
+	Equipo equipo;  
+	int golesfavor; 
+	int golescontra; 
+	int ganados;
+	int perdidos; 
+	int empatados;  
 	
 	public: 
-	int GETgoles1();
-	int GETgoles2();
-	bool GETjugado();
-	Equipo GETequipo1();
-	Equipo GETequipo2();
-	void SETgoles1(int);
-	void SETgoles2(int);
-	void SETjugado(bool);
-	void SETequipo1(Equipo);
-	void SETequipo2(Equipo);
-		
+	Puntos();
+	Puntos(Equipo, int, int, int, int, int);
+	int GETgolesfavor();
+	int GETgolescontra();
+	int GETganados();
+	int GETperdidos();
+	int GETempatados();
+	Equipo GETequipo();
+	void SETgolesfavor(int);
+	void SETgolescontra(int);
+	void SETganados(int);
+	void SETperdidos(int);
+	void SETempatados(int);
+	void SETequipo(Equipo); 		
 	
 };//Fin de la clase.
+
+#endif
