@@ -1,10 +1,10 @@
-#ifndef PARTIDO.HPP
-#define PARTIDO.HPP
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Equipo.cpp"
 #include "Puntos.cpp"
+#pragma once
 
 class Partido{
 	private : 
@@ -29,4 +29,3 @@ class Partido{
 	
 };//Fin de la clase.
 
-#endif

@@ -1,11 +1,11 @@
-#ifndef TABLA.HPP
-#define TABLA.HPP
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Equipo.cpp"
 #include "Partido.cpp"
 #include "Puntos.cpp"
+#pragma once
 
 using namespace std; 
 
@@ -22,4 +22,3 @@ class Tabla{
 	
 };//Fin de la clase.
 
-#endif

@@ -154,12 +154,20 @@ int main(int argc, char** argv) {
 						}
 					}  
 				}
+				cout << "JORNADA DE LA LIGA: " << liga.GETnombre() <<endl;
 				liga.SETjornada(jorn);
 				for (int c =0; c < liga.GETjornada().size();c++){
-					
+					Partido* parti = liga.GETjornada() [c];
+					cout << "Partido: " << c << " " << parti.GETequipo1() << " VS " << parti.GETequipo2() << "Estado: " << parti.GETgoles1() << "-" << parti.GETgoles1();  
 				}	
 				break;
 				}//Fin del caso 2.
+			case 3:
+				{
+				cout << " SIMULACION: " <<endl; 
+					
+				break; 
+				}//Fin del caso 3. 
 		}//Fin del switch de los modulos. 
 	}//Fin del while del programa. 
 	

@@ -1,5 +1,4 @@
-#ifndef LIGA.HPP
-#define LIGA.HPP
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -7,6 +6,7 @@
 #include "Partido.cpp"
 #include "Puntos.cpp"
 #include "Tabla.cpp"
+#pragma once
 
 using namespace std; 
 
@@ -31,4 +31,3 @@ class Liga{
 	
 };//Fin de la clase.
 
-#endif

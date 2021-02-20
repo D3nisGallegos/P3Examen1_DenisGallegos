@@ -1,8 +1,8 @@
-#ifndef PUNTOS.HPP
-#define PUNTOS.HPP
+
 #include <iostream>
 #include <string>
 #include "Equipo.cpp"
+#pragma once
 
 using namespace std; 
 
@@ -33,4 +33,3 @@ class Puntos{
 	
 };//Fin de la clase.
 
-#endif
